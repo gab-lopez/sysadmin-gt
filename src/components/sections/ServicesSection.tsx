@@ -4,6 +4,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { services, unitColors } from "@/data/services";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+
 
 type Filter = "dev" | "it";
 
@@ -99,9 +101,12 @@ export default function ServicesSection() {
                       <p className="text-[#333333] text-sm leading-relaxed mb-4">
                         {item.description}
                       </p>
-                      <button className={`flex items-center gap-1 ${colors.text} text-sm font-medium group-hover:gap-2 transition-all`}>
-                        Ver más <ArrowRight size={14} />
-                      </button>
+                      <Link
+  href="/#cotizacion"
+  className={`flex items-center gap-1 ${colors.text} text-sm font-medium group-hover:gap-2 transition-all`}
+>
+  Solicitar <ArrowRight size={14} />
+</Link>
                     </div>
                   ))}
                 </div>

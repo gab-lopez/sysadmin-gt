@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { services, unitColors } from "@/data/services";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 type Filter = "dev" | "it";
 
@@ -32,29 +33,29 @@ export default function ServiciosPage() {
 
         {/* Filter tabs */}
         <div className="flex flex-wrap justify-center gap-3 mb-16">
-  <button
-    onClick={() => setActive("it")}
-    className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-200 ${
-      active === "it"
-        ? "bg-[#F28E3A] text-white shadow-lg"
-        : "bg-white text-[#F28E3A] border border-[#F28E3A]/30 hover:border-[#F28E3A]"
-    }`}
-  >
-    <span className="w-2 h-2 rounded-full bg-current" />
-    SysAdmin IT
-  </button>
-  <button
-    onClick={() => setActive("dev")}
-    className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-200 ${
-      active === "dev"
-        ? "bg-[#116776] text-white shadow-lg"
-        : "bg-white text-[#116776] border border-[#116776]/30 hover:border-[#116776]"
-    }`}
-  >
-    <span className="w-2 h-2 rounded-full bg-current" />
-    SysAdmin Dev
-  </button>
-</div>
+          <button
+            onClick={() => setActive("it")}
+            className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-200 ${
+              active === "it"
+                ? "bg-[#F28E3A] text-white shadow-lg"
+                : "bg-white text-[#F28E3A] border border-[#F28E3A]/30 hover:border-[#F28E3A]"
+            }`}
+          >
+            <span className="w-2 h-2 rounded-full bg-current" />
+            SysAdmin IT
+          </button>
+          <button
+            onClick={() => setActive("dev")}
+            className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-200 ${
+              active === "dev"
+                ? "bg-[#116776] text-white shadow-lg"
+                : "bg-white text-[#116776] border border-[#116776]/30 hover:border-[#116776]"
+            }`}
+          >
+            <span className="w-2 h-2 rounded-full bg-current" />
+            SysAdmin Dev
+          </button>
+        </div>
 
         {/* Categories */}
         <motion.div
@@ -82,10 +83,10 @@ export default function ServiciosPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                   {category.items.map((item) => (
                     <div
-  key={item.id}
-  style={{ cursor: "pointer" }}
-  className="group bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
->
+                      key={item.id}
+                      style={{ cursor: "pointer" }}
+                      className="group bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
+                    >
                       <div className={`w-9 h-9 rounded-lg ${colors.bgLight} flex items-center justify-center mb-4`}>
                         <Icon size={18} className={colors.text} />
                       </div>
@@ -95,9 +96,12 @@ export default function ServiciosPage() {
                       <p className="text-[#333333] text-sm leading-relaxed mb-4">
                         {item.description}
                       </p>
-                      <button className={`flex items-center gap-1 ${colors.text} text-sm font-medium group-hover:gap-2 transition-all`}>
+                      <Link
+                        href="/#cotizacion"
+                        className={`flex items-center gap-1 ${colors.text} text-sm font-medium group-hover:gap-2 transition-all`}
+                      >
                         Solicitar <ArrowRight size={14} />
-                      </button>
+                      </Link>
                     </div>
                   ))}
                 </div>
@@ -116,14 +120,14 @@ export default function ServiciosPage() {
           </p>
           <a
             href="/#cotizacion"
-  onClick={(e) => {
-    e.preventDefault();
-    window.location.href = "/#cotizacion";
-  }}
-  className="inline-flex items-center gap-2 bg-[#F28E3A] hover:bg-orange-500 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
->
-  Solicitar cotización <ArrowRight size={16} />
-</a>
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "/#cotizacion";
+            }}
+            className="inline-flex items-center gap-2 bg-[#F28E3A] hover:bg-orange-500 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+          >
+            Solicitar cotización <ArrowRight size={16} />
+          </a>
         </div>
       </div>
     </main>
