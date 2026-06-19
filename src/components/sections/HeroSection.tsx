@@ -6,19 +6,38 @@ import ScrollArrow from "@/components/ui/ScrollArrow";
 
 export default function HeroSection() {
   return (
-<section
-  className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#116776]"
->
-  {/* Dot grid background */}
-  <div
-    className="absolute inset-0 opacity-10"
-    style={{
-      backgroundImage: `radial-gradient(circle, #FBF8F2 1px, transparent 1px)`,
-      backgroundSize: "32px 32px",
-    }}
-  />
-      {/* Accent glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#F28E3A] rounded-full opacity-10 blur-[120px]" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#116776]">
+
+      {/* Dot grid animado */}
+      <motion.div
+        className="absolute inset-0 opacity-10"
+        animate={{
+          backgroundPosition: ["0px 0px", "32px 32px"],
+        }}
+        transition={{
+          duration: 6,
+          repeat: Infinity,
+          ease: "linear",
+        }}
+        style={{
+          backgroundImage: `radial-gradient(circle, #FBF8F2 1px, transparent 1px)`,
+          backgroundSize: "32px 32px",
+        }}
+      />
+
+      {/* Accent glow flotante */}
+      <motion.div
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#F28E3A] rounded-full opacity-10 blur-[120px]"
+        animate={{
+          scale: [1, 1.15, 1],
+          opacity: [0.08, 0.14, 0.08],
+        }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
@@ -92,17 +111,12 @@ export default function HeroSection() {
           >
             Ver servicios
           </Link>
-          {/*<Link
-            href="/proyectos"
-            className="border border-white/40 hover:border-white text-white font-semibold px-8 py-3 rounded-lg transition-colors hover:bg-white/10"
-          >
-            Conocer proyectos
-          </Link>*/}
         </motion.div>
       </div>
-    <div className="absolute bottom-6 left-0 right-0 z-10">
-  <ScrollArrow targetId="servicios" direction="down" light={true} />
-</div>  
+
+      <div className="absolute bottom-6 left-0 right-0 z-10">
+        <ScrollArrow targetId="servicios" direction="down" light={true} />
+      </div>
     </section>
   );
 }

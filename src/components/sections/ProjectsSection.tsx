@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { projects, type ProjectCategory } from "@/data/projects";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import ScrollArrow from "../ui/ScrollArrow";
 
 const filters: { label: string; value: ProjectCategory | "Todos" }[] = [
   { label: "Todos", value: "Todos" },
@@ -118,4 +119,5 @@ export default function ProjectsSection() {
       </div>
     </section>
   );
+  <ScrollArrow targetId="por-que-elegirnos" direction="down" />
 }
