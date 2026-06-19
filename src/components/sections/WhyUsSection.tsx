@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ShieldCheck, Zap, Layers, HeadphonesIcon, MapPin, Award } from "lucide-react";
+import ScrollArrow from "../ui/ScrollArrow";
 
 const reasons = [
   {
@@ -82,4 +83,5 @@ export default function WhyUsSection() {
       </div>
     </section>
   );
+  <ScrollArrow targetId="cotizacion" direction="down" />
 }

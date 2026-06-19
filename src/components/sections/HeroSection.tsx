@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import ScrollArrow from "@/components/ui/ScrollArrow";
 
 export default function HeroSection() {
   return (
@@ -99,6 +100,9 @@ export default function HeroSection() {
           </Link>*/}
         </motion.div>
       </div>
+    <div className="absolute bottom-6 left-0 right-0 z-10">
+  <ScrollArrow targetId="servicios" direction="down" light={true} />
+</div>  
     </section>
   );
 }

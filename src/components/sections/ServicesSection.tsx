@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { services, unitColors } from "@/data/services";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import ScrollArrow from "@/components/ui/ScrollArrow";
+
 
 
 type Filter = "dev" | "it";
@@ -117,4 +119,5 @@ export default function ServicesSection() {
       </div>
     </section>
   );
+  <ScrollArrow targetId="proyectos" direction="down" />
 }
