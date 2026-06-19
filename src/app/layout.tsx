@@ -59,6 +59,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" suppressHydrationWarning>
+      <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+</head>
       <body className={`${geist.variable} ${geistMono.variable} antialiased bg-[#FBF8F2] text-[#333333]`}>
         <Navbar />
         <main>
