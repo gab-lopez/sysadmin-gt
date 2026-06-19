@@ -24,17 +24,17 @@ export const services: ServiceCategory[] = [
       {
         id: "cableado",
         title: "Cableado estructurado",
-        description: "Instalación profesional de redes cableadas certificadas.",
+        description: "Diseñamos e instalamos redes cableadas estéticas, ordenadas y certificadas. Eliminamos el caos de cables en tu oficina o gabinete de servidores, garantizando una conexión de alta velocidad y libre de fallas físicas.",
       },
       {
         id: "routers",
         title: "Configuración de routers y switches",
-        description: "Configuración y administración de equipos de red Cisco, MikroTik y más.",
+        description: "onectividad rápida y segura para todo tu equipo. Configuramos equipos de alta gama (Cisco, Fortinet, Ubiquiti) para segmentar tus redes de forma segura, mejorar la cobertura Wi-Fi y asegurar que tu internet rinda al máximo.",
       },
       {
         id: "diagnostico",
         title: "Diagnóstico de red",
-        description: "Análisis de rendimiento y resolución de problemas de conectividad.",
+        description: "¿Internet lento o caídas constantes? Analizamos a fondo tu red para identificar cuellos de botella, interferencias en el Wi-Fi o fallas de conectividad, resolviéndolos de inmediato para que tu operación no se detenga.",
       },
     ],
   },
@@ -46,18 +46,18 @@ export const services: ServiceCategory[] = [
     items: [
       {
         id: "gestion-it",
-        title: "Gestión de infraestructura IT",
-        description: "Administración integral de tu entorno tecnológico empresarial.",
+        title: "Gestión de Correos y Dominios Profesionales",
+        description: "Configuración, administración y soporte integral para tus plataformas de correo (Microsoft 365/Zoho). Aseguramos la entrega de tus correos configurando registros DNS esenciales (SPF, DKIM, DMARC) para evitar el spam y proteger tu identidad digital.",
       },
       {
         id: "auditorias",
-        title: "Auditorías tecnológicas",
-        description: "Evaluación completa de tu infraestructura con recomendaciones de mejora.",
+        title: "Servicios en la Nube y Productividad",
+        description: "Implementación y administración de entornos en la nube para tu negocio. Configuramos herramientas colaborativas, almacenamiento seguro de archivos, respaldos automatizados y políticas de acceso para que tu equipo trabaje de forma eficiente y segura desde cualquier lugar.",
       },
       {
         id: "optimizacion",
-        title: "Optimización de sistemas",
-        description: "Mejora del rendimiento de servidores, redes y estaciones de trabajo.",
+        title: "Seguridad de Identidad y Accesos",
+        description: "Centralización y protección de las cuentas de tu empresa. Gestionamos directorios activos, autenticación de doble factor (2FA) y permisos de usuarios para asegurar que solo el personal autorizado acceda a la información crítica de tu negocio.",
       },
     ],
   },
@@ -69,8 +69,8 @@ export const services: ServiceCategory[] = [
     items: [
       {
         id: "hardware",
-        title: "Venta de hardware y accesorios",
-        description: "Computadoras, servidores, periféricos y accesorios de las mejores marcas.",
+        title: "Suministro de Equipos y Hardware Corporativo",
+        description: "Equipamos tu empresa con la mejor tecnología. Proveemos computadoras, servidores, componentes de red y accesorios de las mejores marcas, adaptados exactamente a las necesidades de tu presupuesto y con garantía local.",
       },
     ],
   },
@@ -83,12 +83,12 @@ export const services: ServiceCategory[] = [
       {
         id: "reparacion",
         title: "Reparación de equipos",
-        description: "Diagnóstico y reparación de computadoras, laptops y periféricos.",
+        description: "Recupera la velocidad de tus herramientas de trabajo. Diagnosticamos y reparamos laptops, computadoras de escritorio y periféricos. Solucionamos fallas de hardware, lentitud extrema y pantallas azules con repuestos de calidad.",
       },
       {
         id: "mantenimiento",
         title: "Mantenimiento preventivo y correctivo",
-        description: "Planes de mantenimiento para mantener tu infraestructura en óptimas condiciones.",
+        description: "Evita sorpresas costosas. Ofrecemos planes de mantenimiento preventivo para limpiar, optimizar y proteger tus equipos y servidores antes de que fallen, asegurando la continuidad y productividad de tu negocio.",
       },
     ],
   },
