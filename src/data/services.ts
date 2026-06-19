@@ -29,7 +29,7 @@ export const services: ServiceCategory[] = [
       {
         id: "routers",
         title: "Configuración de routers y switches",
-        description: "onectividad rápida y segura para todo tu equipo. Configuramos equipos de alta gama (Cisco, Fortinet, Ubiquiti) para segmentar tus redes de forma segura, mejorar la cobertura Wi-Fi y asegurar que tu internet rinda al máximo.",
+        description: "Conectividad rápida y segura para todo tu equipo. Configuramos equipos de alta gama (Cisco, Fortinet, Ubiquiti) para segmentar tus redes de forma segura, mejorar la cobertura Wi-Fi y asegurar que tu internet rinda al máximo.",
       },
       {
         id: "diagnostico",
