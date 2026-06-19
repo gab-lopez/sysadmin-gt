@@ -6,7 +6,6 @@ import Footer from "@/components/layout/Footer";
 import PageTransition from "@/components/layout/PageTransition";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
-
 const geist = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -60,9 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" suppressHydrationWarning>
-<body
-  className={`${geist.variable} ${geistMono.variable} antialiased bg-[#FBF8F2] text-[#333333]`}
->
+      <body className={`${geist.variable} ${geistMono.variable} antialiased bg-[#FBF8F2] text-[#333333]`}>
         <Navbar />
         <main>
           <PageTransition>
@@ -70,14 +67,7 @@ export default function RootLayout({
           </PageTransition>
         </main>
         <Footer />
-        <Navbar />
-<main>
-  <PageTransition>
-    {children}
-  </PageTransition>
-</main>
-<Footer />
-<WhatsAppButton />
+        <WhatsAppButton />
       </body>
     </html>
   );
