@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageTransition from "@/components/layout/PageTransition";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
+
 
 const geist = Geist({
   variable: "--font-geist-sans",
@@ -68,6 +70,14 @@ export default function RootLayout({
           </PageTransition>
         </main>
         <Footer />
+        <Navbar />
+<main>
+  <PageTransition>
+    {children}
+  </PageTransition>
+</main>
+<Footer />
+<WhatsAppButton />
       </body>
     </html>
   );
