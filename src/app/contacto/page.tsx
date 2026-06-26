@@ -88,8 +88,8 @@ export default function ContactoPage() {
                 {contactInfo.map((item) => {
                   const Icon = item.icon;
                   return (
-                    
-                      key={item.label}
+                    <a
+                    key={item.label}
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -113,7 +113,7 @@ export default function ContactoPage() {
             </div>
 
             {/* WhatsApp */}
-            
+            <a
               href="https://wa.me/50231710897?text=Hola%20Sysadmin%20GT"
               target="_blank"
               rel="noopener noreferrer"
